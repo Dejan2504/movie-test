@@ -1,0 +1,36 @@
+.search_media {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border: 1px solid #5e43f3;
+  border-radius: 4px;
+  padding: 12px 16px;
+  transition: 0.4s ease-in-out;
+  background-color: #121212;
+}
+
+.search_media.glow {
+  transition: 0.4s ease-in-out;
+  filter: drop-shadow(0 0 8px #9171f8);
+}
+
+.search_media img {
+  height: 100%;
+}
+
+.search_media input {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.4s ease-in-out;
+}
+
+.search_media input:focus {
+  border: none;
+  outline: none;
+}

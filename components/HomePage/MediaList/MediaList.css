@@ -1,0 +1,10 @@
+.media_list {
+  padding: 32px 20px 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+
+  height: 100%;
+  overflow-y: auto;
+}

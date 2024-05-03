@@ -1,12 +1,11 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import movieService from "../../services/moviesService";
 
-export const authenticateThunk = createAsyncThunk(
-  "authenticateThunk",
+export const singleMovieThunk = createAsyncThunk(
+  "singleMovieThunk",
   async () => {
-    const data = await movieService.authenticate();
+    const data = await movieService.getSingleMovie();
 
-    console.log(data);
     return data;
   }
 );
