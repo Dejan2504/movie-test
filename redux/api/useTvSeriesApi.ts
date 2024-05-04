@@ -11,7 +11,10 @@ import {
   selectedTvSeriesSelector,
   topTvSeriesSelector,
 } from "../slices/tvSeries/tvSeriesSelector";
-import { clearSearchTvSeriesReducer } from "../slices/tvSeries/tvSeriesSlice";
+import {
+  clearSearchTvSeriesReducer,
+  clearSelectedTvSeriesReducer,
+} from "../slices/tvSeries/tvSeriesSlice";
 
 type disp = typeof store.dispatch;
 
@@ -34,8 +37,8 @@ const useTvSeriesApi = () => {
     dispatch(tvSeriesThunk());
   };
 
-  const fetchSingleTvSerie = () => {
-    dispatch(singleTvSerieThunk());
+  const fetchSingleTvSerie = (id: string) => {
+    dispatch(singleTvSerieThunk(id));
   };
 
   const searchTvSeries = (searchInput: string) => {
@@ -44,6 +47,10 @@ const useTvSeriesApi = () => {
 
   const clearSearchTvSeries = () => {
     dispatch(clearSearchTvSeriesReducer());
+  };
+
+  const clearSelectedTvSeries = () => {
+    dispatch(clearSelectedTvSeriesReducer());
   };
 
   return {
@@ -57,6 +64,7 @@ const useTvSeriesApi = () => {
     fetchSingleTvSerie,
     searchTvSeries,
     clearSearchTvSeries,
+    clearSelectedTvSeries,
   };
 };
 

@@ -10,9 +10,9 @@ const getMovies = async () => {
   return response.data;
 };
 
-const getSingleMovie = async () => {
+const getSingleMovie = async (id: string) => {
   const response = await axios.get(
-    `https://api.themoviedb.org/3/movie/299536?api_key=${API_KEY}`
+    `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`
   );
 
   return response.data;

@@ -3,9 +3,13 @@ import movieService from "../../services/moviesService";
 
 export const singleMovieThunk = createAsyncThunk(
   "singleMovieThunk",
-  async () => {
-    const data = await movieService.getSingleMovie();
+  async (id: string, thunkAPI) => {
+    try {
+      const data = await movieService.getSingleMovie(id);
 
-    return data;
+      return data;
+    } catch (error) {
+      thunkAPI.rejectWithValue(error);
+    }
   }
 );

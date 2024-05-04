@@ -9,3 +9,9 @@
 
   padding: 64px 0 0 0;
 }
+
+@media only screen and (max-width: 1440px) {
+  .home_page {
+    padding: 64px 16px 0;
+  }
+}

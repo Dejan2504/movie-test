@@ -1,0 +1,28 @@
+.tv_series_button {
+  width: 100%;
+
+  padding: 32px 64px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tv_series_button button {
+  background-color: #382bf0;
+  border: 0;
+  padding: 12px 24px;
+  min-height: 52px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .tv_series_button a,
+  .tv_series_button button {
+    width: 100%;
+  }
+}

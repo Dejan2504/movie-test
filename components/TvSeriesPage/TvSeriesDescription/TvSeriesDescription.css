@@ -1,0 +1,25 @@
+.tv_series_description {
+  padding: 32px 64px;
+}
+
+.tv_series_overview-title {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.tv_series_overview {
+  padding: 16px;
+  font-size: 18px;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .tv_series_description {
+    padding: 32px;
+  }
+
+  .tv_series_overview {
+    padding: 16px 0;
+  }
+}

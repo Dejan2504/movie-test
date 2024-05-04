@@ -102,9 +102,9 @@ export type selectedTvSerieType = {
 };
 
 export type tvSeriesSliceType = {
-  topTvSeries: singleTvSerieType[];
+  topTvSeries: singleTvSerieType[] | [];
   loadingTopTvSeries: boolean;
-  selectedTvSerie: selectedTvSerieType;
+  selectedTvSerie: selectedTvSerieType | object;
   loadingSelectedTvSerie: boolean;
   searchTvSeries: singleTvSerieType[] | [];
   loadingSearchTvSeries: boolean;

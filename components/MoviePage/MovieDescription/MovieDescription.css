@@ -1,0 +1,25 @@
+.movie_description {
+  padding: 32px 64px;
+}
+
+.movie_overview-title {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.movie_overview {
+  padding: 16px;
+  font-size: 18px;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .movie_description {
+    padding: 32px;
+  }
+
+  .movie_overview {
+    padding: 16px 0;
+  }
+}

@@ -12,8 +12,8 @@ export const loadingTopTvSeriesSelector = (state: {
 }) => state.tv.loadingTopTvSeries;
 
 export const selectedTvSeriesSelector = (state: {
-  tv: { selectedTvSeries: selectedTvSerieType };
-}) => state.tv.selectedTvSeries;
+  tv: { selectedTvSerie: selectedTvSerieType };
+}) => state.tv.selectedTvSerie;
 
 export const loadingSelectedTvSerieSelector = (state: {
   tv: { loadingSelectedTvSerie: boolean };

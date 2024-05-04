@@ -1,6 +1,8 @@
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../components/HomePage/HomePage";
+import MoviePage from "../components/MoviePage/MoviePage";
+import TvSeriesPage from "../components/TvSeriesPage/TvSeriesPage";
 
 const Router = () => {
   return (
@@ -14,10 +16,19 @@ const Router = () => {
         }
       />
       <Route
-        path="/test"
+        path="/movie/:id"
         element={
           <Suspense>
-            <div>Test</div>
+            <MoviePage />
+          </Suspense>
+        }
+      />
+
+      <Route
+        path="/tv-serie/:id"
+        element={
+          <Suspense>
+            <TvSeriesPage />
           </Suspense>
         }
       />

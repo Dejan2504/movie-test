@@ -62,9 +62,9 @@ export type selectedMovieType = {
 };
 
 export type moviesSliceType = {
-  topMovies: singleMovieType[];
+  topMovies: singleMovieType[] | [];
   loadingTopMovies: boolean;
-  selectedMovie: selectedMovieType;
+  selectedMovie: selectedMovieType | object;
   loadingSelectedMovie: boolean;
   searchMovies: singleMovieType[] | [];
   loadingSearchMovies: boolean;

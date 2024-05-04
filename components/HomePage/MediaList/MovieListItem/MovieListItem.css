@@ -46,3 +46,19 @@
   font-weight: 700;
   color: #ffffffcc;
 }
+
+@media only screen and (max-width: 1440px) {
+  .media_list_item:hover {
+    background-size: 550px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .media_list_item {
+    min-height: 400px !important;
+  }
+
+  .media_list_item:hover {
+    background-size: 700px;
+  }
+}

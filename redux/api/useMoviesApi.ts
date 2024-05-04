@@ -10,7 +10,10 @@ import {
   selectedMovieSelector,
   topMoviesSelector,
 } from "../slices/movie/moviesSelector";
-import { clearSearchMoviesReducer } from "../slices/movie/moviesSlice";
+import {
+  clearSearchMoviesReducer,
+  clearSelectedMovieReducer,
+} from "../slices/movie/moviesSlice";
 
 type disp = typeof store.dispatch;
 
@@ -30,8 +33,8 @@ const useMovesApi = () => {
     dispatch(moviesThunk());
   };
 
-  const fetchSingleMovie = () => {
-    dispatch(singleMovieThunk());
+  const fetchSingleMovie = (id: string) => {
+    dispatch(singleMovieThunk(id));
   };
 
   const searchMovies = (searchInput: string) => {
@@ -40,6 +43,10 @@ const useMovesApi = () => {
 
   const clearSearchMovies = () => {
     dispatch(clearSearchMoviesReducer());
+  };
+
+  const clearSelectedMovie = () => {
+    dispatch(clearSelectedMovieReducer());
   };
 
   return {
@@ -53,6 +60,7 @@ const useMovesApi = () => {
     fetchSingleMovie,
     searchMovies,
     clearSearchMovies,
+    clearSelectedMovie,
   };
 };
 

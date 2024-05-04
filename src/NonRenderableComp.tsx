@@ -4,31 +4,19 @@ import useTvSeriesApi from "../redux/api/useTvSeriesApi";
 import useLayoutApi from "../redux/api/useLayoutApi";
 
 const NonRenderableComp = () => {
-  const {
-    searchMovie,
-    fetchMovies,
-    fetchSingleMovie,
-    searchMovies,
-    clearSearchMovies,
-  } = useMovesApi();
-  const {
-    searchTvSerie,
-    fetchTvSeries,
-    fetchSingleTvSerie,
-    searchTvSeries,
-    clearSearchTvSeries,
-  } = useTvSeriesApi();
+  const { searchMovie, fetchMovies, searchMovies, clearSearchMovies } =
+    useMovesApi();
+  const { searchTvSerie, fetchTvSeries, searchTvSeries, clearSearchTvSeries } =
+    useTvSeriesApi();
   const { mediaType, searchInput } = useLayoutApi();
 
   useEffect(() => {
     if (mediaType === "movie") {
       fetchMovies();
-      fetchSingleMovie();
     }
 
     if (mediaType === "tv_series") {
       fetchTvSeries();
-      fetchSingleTvSerie();
     }
   }, [mediaType]);
 

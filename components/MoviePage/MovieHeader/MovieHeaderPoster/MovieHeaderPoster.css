@@ -1,0 +1,19 @@
+.poster {
+  width: 200px;
+  position: absolute;
+
+  bottom: 20px;
+  left: 50px;
+}
+
+.poster img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .poster {
+    left: 25px;
+    width: 100px;
+  }
+}

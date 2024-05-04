@@ -3,9 +3,13 @@ import tvSeriesService from "../../services/tvSeriesService";
 
 export const singleTvSerieThunk = createAsyncThunk(
   "singleTvSerieThunk",
-  async () => {
-    const result = await tvSeriesService.getSingleTvSerie();
+  async (id: string, thunkAPI) => {
+    try {
+      const result = await tvSeriesService.getSingleTvSerie(id);
 
-    return result;
+      return result;
+    } catch (error) {
+      thunkAPI.rejectWithValue(error);
+    }
   }
 );

@@ -10,9 +10,9 @@ const getTvSeries = async () => {
   return response.data;
 };
 
-const getSingleTvSerie = async () => {
+const getSingleTvSerie = async (id: string) => {
   const response = await axios.get(
-    `https://api.themoviedb.org/3/tv/111110?api_key=${API_KEY}`
+    `https://api.themoviedb.org/3/tv/${id}?api_key=${API_KEY}`
   );
 
   return response.data;

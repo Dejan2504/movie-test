@@ -1,0 +1,32 @@
+.movie_header .title {
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  margin: 0 0 25px 275px;
+}
+
+.movie_header .title .main_title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.movie_header .title .sub_title {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .movie_header .title {
+    margin: 0 10px 25px 150px;
+  }
+
+  .movie_header .title .main_title {
+    font-size: 28px;
+  }
+
+  .movie_header .title .sub_title {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,41 @@
+.tv_series_header {
+  min-height: 500px;
+
+  background-size: cover;
+  background-position: center;
+
+  box-shadow: 0px -60px 150px 90px rgba(0, 0, 0, 1) inset;
+  -webkit-box-shadow: 0px -60px 150px 90px rgba(0, 0, 0, 1) inset;
+  -moz-box-shadow: 0px -60px 150px 90px rgba(0, 0, 0, 1) inset;
+
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.back_button {
+  position: absolute;
+  cursor: pointer;
+
+  top: 35px;
+  font-size: 22px;
+  left: 50px;
+
+  font-weight: 700;
+
+  transition: 0.1s linear;
+  color: white;
+}
+
+.back_button:hover {
+  font-size: 24px;
+  transition: 0.1s linear;
+}
+
+@media screen and (max-width: 600px) {
+  .back_button {
+    left: 25px;
+    font-size: 18px;
+  }
+}
