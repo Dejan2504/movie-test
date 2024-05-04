@@ -21,9 +21,6 @@ type disp = typeof store.dispatch;
 const useTvSeriesApi = () => {
   const dispatch = useDispatch<disp>();
 
-  //   https://image.tmdb.org/t/p/w500/path.jpg ==> link for images
-  //   https://developer.themoviedb.org/docs/image-basics ==> other example
-
   const topTvSeries = useSelector(topTvSeriesSelector);
   const loadingTopTvSeries = useSelector(loadingTopTvSeriesSelector);
 
