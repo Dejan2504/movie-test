@@ -1,4 +1,3 @@
-import React from "react";
 import "./TvSeriesDescription.css";
 import useTvSeriesApi from "../../../redux/api/useTvSeriesApi";
 

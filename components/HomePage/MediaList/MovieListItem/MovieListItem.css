@@ -1,4 +1,4 @@
-.media_list_item {
+.movie_list_item {
   color: white;
   min-height: 300px;
 
@@ -10,7 +10,7 @@
   transition: 0.15s ease-out;
 }
 
-.media_list_item .overlay {
+.movie_list_item .overlay {
   width: 100%;
   height: 100%;
   border-radius: 8px;
@@ -25,14 +25,14 @@
   transition: 0.15s ease-in;
 }
 
-.media_list_item:hover {
+.movie_list_item:hover {
   scale: 1.05;
   transition: 0.15s ease-in;
 
-  background-size: 107%;
+  background-size: 700px;
 }
 
-.media_list_item:hover .overlay {
+.movie_list_item:hover .overlay {
   transition: 0.15s ease-in;
 
   background: linear-gradient(90deg, #000000 0%, #00000044 100%);
@@ -40,25 +40,19 @@
   background: -moz-linear-gradient(90deg, #000000 0%, #00000044 100%);
 }
 
-.media_list_item .overlay .title {
+.movie_list_item .overlay .title {
   font-size: 24px;
   padding: 8px;
   font-weight: 700;
   color: #ffffffcc;
 }
 
-@media only screen and (max-width: 1440px) {
-  .media_list_item:hover {
-    background-size: 550px;
-  }
-}
-
 @media only screen and (max-width: 730px) {
-  .media_list_item {
+  .movie_list_item {
     min-height: 400px !important;
   }
 
-  .media_list_item:hover {
+  .movie_list_item:hover {
     background-size: 700px;
   }
 }

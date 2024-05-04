@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import useMovesApi from "../redux/api/useMoviesApi";
 import useTvSeriesApi from "../redux/api/useTvSeriesApi";
 import useLayoutApi from "../redux/api/useLayoutApi";

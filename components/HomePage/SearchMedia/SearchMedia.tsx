@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./SearchMedia.css";
 import useLayoutApi from "../../../redux/api/useLayoutApi";
 

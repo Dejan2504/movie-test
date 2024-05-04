@@ -1,4 +1,3 @@
-import React from "react";
 import "./MediaPicker.css";
 import useLayoutApi from "../../../redux/api/useLayoutApi";
 

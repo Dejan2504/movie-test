@@ -7,7 +7,7 @@ const MovieListItem = ({ movie }: { movie: singleMovieType }) => {
 
   return (
     <div
-      className="media_list_item"
+      className="movie_list_item"
       onClick={() => navigate(`/movie/${movie.id}`)}
       style={
         movie.backdrop_path !== null

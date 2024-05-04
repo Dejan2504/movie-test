@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../components/HomePage/HomePage";
 import MoviePage from "../components/MoviePage/MoviePage";

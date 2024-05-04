@@ -7,7 +7,7 @@ const MovieListItem = ({ serie }: { serie: singleTvSerieType }) => {
 
   return (
     <div
-      className="media_list_item"
+      className="tv_series_list_item"
       onClick={() => navigate(`/tv-serie/${serie.id}`)}
       style={{
         backgroundImage: serie.backdrop_path

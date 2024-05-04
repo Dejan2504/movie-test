@@ -1,4 +1,3 @@
-import React from "react";
 import "./MovieHeaderTitle.css";
 
 const MovieHeaderTitle = ({
